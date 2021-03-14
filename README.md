@@ -8,7 +8,7 @@
     
 **Autobang!** is a pretty classic and old-school home computer BASIC game for Commodore 64 BASIC v2, written in 10 lines, 80 chars per line max.
 
-It features some very basic (that's C=64 BASIC in fact :-) ) graphics, sound and gameplay but, in its extreme simplicity/naiveness, it is engineered to be fun and addictive.
+It features some very basic (that's C=64 BASIC after all ^^) graphics, sound and gameplay but, in its extreme simplicity/naiveness, it is engineered to be fun and addictive.
 
 Its name is a tribute both to:
  - *"Autobahn"* (masterpiece album by Kraftwerk, German band universally recognized as pioneer in electronic music, made by analog synthesizers: definitely not far from the Commodore SID chip sounds style, about to appear in a couple of years)
