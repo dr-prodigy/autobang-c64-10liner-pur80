@@ -36,7 +36,7 @@ Any other string = start race
 ###  Technical notes
 The game works PRINTing the road with new semi-graphic lines at the bottom of the screen (thus triggering system scroll routine, pretty slow still working as needed), while drawing "sprites" (car and pines, made of simple chars as well) through video/color RAM POKEs, so to leave the cursor position always at the bottom of the screen, simplifying the code and reducing overhead.
 
-Track structure is coded in sectors through DATA blocks, formatted as `[turn direction X], [sector length Y)], ....` and can be extended at will with a single change to the code (row 0).
+Track structure is coded in sectors through DATA value pairs (format: `[turn direction X], [sector length Y)], ....`).
 
 All sound effects are handled by SID voice #1, initialized once and then reprogrammed on-the-fly between sawtooth (engine sound while racing) and noise (bang) waveform when needed. Closing the program "gracefully" with Q ensures the sound is silenced before leaving.
 
