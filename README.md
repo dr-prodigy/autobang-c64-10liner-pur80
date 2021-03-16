@@ -15,18 +15,18 @@ Its name is a tribute both to:
  - a toy car (*"AUTOBANG"*) I owned in my childhood (late '70s/beginning of '80s, ie: near-C=64 era), named like that for it featured support for a toy gun tiny explosive charge, which was triggered by a bumper on its nose, thus blowing up with a "bang!" when sent against a wall.
 
 ### Story & gameplay
-You are a brave driver in a car with no brakes, running like crazy in a winding country track and trying to stay alive, following the road turns and avoiding pines grown in the middle of the road (?!?).
+You are a brave driver in a car with no brakes, running like crazy in a winding country track and trying to stay alive while following the road turns and avoiding pines grown in the middle of the road (?!?).
 
 Your goal is to complete the whole track 10 times (stages), but it won't be that easy: at every new stage the road gets a bit narrower and on higher levels you will also find more trees on your way.
 
-Score increases at every move, depending on the current stage (higher levels => more points).
+Score increases while you proceed in your crazy run, depending on the current stage (higher levels => more points).
 
 Your sporty car can turn fast.. will your reflexes be as good, enough to bring you to the end of the race? 
 
 ### In-game controls
 Z = move left
 
-X = move right
+M = move right
 
 ### Menu commands
 Q = quit
@@ -34,12 +34,12 @@ Q = quit
 Any other string = start race
 
 ###  Technical notes
-The game works PRINTing the road with new semi-graphic lines at the bottom of the screen (thus triggering system scroll routine, pretty slow still working as needed), while drawing "sprites" (car and pines, made of simple chars as well) through video/color RAM POKEs, so to leave the cursor position always at the bottom of the screen, simplifying the code and reducing overhead.
+The game works PRINTing the road with new semi-graphic lines at the bottom of the screen (thus triggering system scroll routine, pretty slow yet working as needed), while drawing "sprites" (car and pines, made of simple chars as well) through video/color RAM POKEs, so to leave the cursor position always at the bottom of the screen, thus simplifying the code and reducing overhead.
 
-Track structure is coded in sectors through DATA value pairs (format: `[turn direction X], [sector length Y)], ....`).
+Track structure is coded in sectors through DATA value pairs (format: `[turn direction X], [sector length Y)], ....`), scattered throughout the code.
 
 All sound effects are handled by SID voice #1, initialized once and then reprogrammed on-the-fly between sawtooth (engine sound while racing) and noise (bang) waveform when needed. Closing the program "gracefully" with Q ensures the sound is silenced before leaving.
 
-Game is compatible with all C=64 versions (real/emulated) and even with the first 2 kernals (when drawing chars via POKE, color RAM is always explicitly set).
+To provide better graphics, provided code is compatible with R3 KERNALs only (video color RAM fix). As PUR-80 it can be adapted for any C=64 versions, changing 4 bytes on line 5, at the expense of smaller trees (1 char only).
 
 (c) 2021 by M.Montel (dr-prodigy): [find me on github](https://github.com/dr-prodigy/)
