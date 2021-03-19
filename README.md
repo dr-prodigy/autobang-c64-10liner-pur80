@@ -6,7 +6,7 @@
     
     READY.
     
-**Autobang!** is a pretty classic and old-school home computer BASIC game for Commodore 64 BASIC v2, written in 10 lines, 80 chars per line max.
+**Autobang!** is a pretty classic and old-school home computer BASIC game for Commodore 64 BASIC v2. I developed this game back in the C64 days as a complete game: after more than 30 years(!!!), I decided to re-implement it as 10-liner.
 
 It features some very basic (that's C=64 BASIC after all ^^) graphics, sound and gameplay but, in its extreme simplicity/naiveness, it is engineered to be fun and addictive.
 
