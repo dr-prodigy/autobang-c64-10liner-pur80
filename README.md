@@ -55,27 +55,30 @@ Trees can sometimes appear out of the road too. This is done not only for aesthe
 
 All sound effects are handled by SID voice #1, initialized once and then reprogrammed on-the-fly between sawtooth (engine sound while racing) and noise (bang) waveform when needed. Closing the program "gracefully" with Q command ensures the sound is silenced before leaving.
 
-To provide better graphics, provided code is compatible with R3 KERNALs only (ie: featuring video color RAM fix).
-While remaining PUR-80 compliant, it could be easily adapted for any C=64 version, changing 5 characters on line 5, at the expense of smaller trees (1 char only).
+The game is 100% compatible with R3 KERNALs (ie: featuring video color RAM fix) only, but
+it works with all older C=64 versions too with just some glitches (on R1 trees trunks are white, while on R2 aren't visible). This said, the game is totally playable on any machine anyway.
 
 #### Variables
 
-Apart from SC (score) all variable names are 1 byte long to reduce fingerprint. S and V are used to point SID and VIC registers with shorter code (like it used to be in the good ol' days), but it is somehow weird to see V set to 53280 (clearly not the first VIC register location): I chose to use border register instead of 53248, to remove a couple more of unnecessary bytes from the code.
+All variable names are 1 byte long to reduce fingerprint. S and V are used to point SID and VIC registers with shorter code (like it used to be in the good ol' days).
 
+C = Car position (x)
+E = scorE
+D = no. of track sector Data (zero-based) (+Drp)
+L = current Level
+N = curreNt track sector
+O = track row Offset (x)
+P = temP iterator for trees and game over graph&sound effects (+drP)
+Q = Quick temp variable to gain some bytes
+R = current sector Row
 S = SID first register location
-V = VIC border location
-D = no. of track sectors (zero-based)
-X(array) = track sector turn delta x (0=straight; <0 = turn left; >0 = turn right)
-Y(array) = track sector length y
-K$ = pressed key (in game) / chosen command (attract mode)
-T = track current position (x)
-C = car position (x)
-L = current level
-N = current track sector
-Z = row iterator in current sector
-O = track row offset (x)
-W = track width (recalculated at every row)
-SC = score
-I = temp iterator for trees and game over graph&sound effects
+T = Track current position (x)
+V = VIC II location
+W = track Width (recalculated at every row)
+X(array) = track sector turn delta X (0=go straight; <0 = turn left; >0 = turn right)
+Y(array) = track sector length Y
+
+K$ = pressed Key (in game) / chosen command (attract mode)
+R$ = game Result
 
 (c) 2021 by M.Montel (dr-prodigy): [find me on github](https://github.com/dr-prodigy/)
