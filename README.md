@@ -60,11 +60,11 @@ All **sound effects** are handled by **SID voice #1**, initialized once and then
 The game ends up with a **"GAME OVER"** (crash sound) or a **"GOAL!"** (whistle sound) message, along with the final score.
 Sounds duration and sprite initializations (run every time on purpose) give enough time to the player to read his score before the attract screen comes back in.
 
-The **game code works best on R3 KERNALs** (ie: with video color RAM fix), although **it is compatible with all older C=64** versions too, at the expense of a small glitch (ie: trees trunks are white on R1, and invisible on R2. Tree crowns colouring is instead available on any version). Out of this graphic glitch, the game is totally playable on any real or emulated C64 machine.
+The **game code works best on R3 KERNALs** (ie: with video color RAM fix), although **it is compatible with all older C=64** versions too, except from a small glitch (ie: trees trunks are white on R1, and invisible on R2. Tree crowns colouring is instead available on any version). Out of this graphic glitch, the game is totally playable on any real or emulated C64 machine.
 
 #### Code stats + "fun facts"
 The program is made of 10 lines (0-9), for a total of 793 actual code chars + 6 "cosmetic" chars.
-You will read **my initials ("DRP") at the end of lines 3-6**. While "D" and "P" comes from actual code chars, "R" (**line 5**) comes instead from a syntax error-ed short block of code (never parsed, so unharmful), featuring **a smilie :-)** too.
+You will read **my initials ("DRP") at the end of lines 3-6**. While "D" and "P" come from actual code chars, "R" (**line 5**) comes instead from a syntax error-ed short block of code (never parsed, so unharmful), featuring **a smilie :-)** too.
 
 #### Variables
 
