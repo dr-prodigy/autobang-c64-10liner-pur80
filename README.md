@@ -57,7 +57,7 @@ Track width is initially 21 chars, and then it's reduced by 1 char every new lev
 
 All **sound effects** are handled by **SID voice #1**, initialized once and then reprogrammed on-the-fly between sawtooth (engine infinite sound while racing) and noise (crash) waveform when needed.
 
-The game ends up with a **"GAME OVER"** (crash sound) or a **"GOAL!"** message (whistle sound), along with the final score.
+The game ends up with a **"GAME OVER"** (crash sound) or a **"GOAL!"** (whistle sound) message, along with the final score.
 Sounds duration and sprite initializations (run every time on purpose) give enough time to the player to read his score before the attract screen comes back in.
 
 The **game code works best on R3 KERNALs** (ie: with video color RAM fix), although **it is compatible with all older C=64** versions too, at the expense of a small glitch (ie: trees trunks are white on R1, and invisible on R2. Tree crowns colouring is instead available on any version). Out of this graphic glitch, the game is totally playable on any real or emulated C64 machine.
