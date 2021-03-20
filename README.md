@@ -70,23 +70,23 @@ You will read **my initials ("DRP") at the end of lines 3-6**. While "D" and "P"
 
 **All variable names are 1 char long** to save space. **S** and **V** are used to access **SID** and **VIC II** registers with shorter code (like it used to be in the good ol' days). **D** and **P** are used to sign the code with my initials too.
 
-**C** = Car position (x)
-**E** = scorE
-**D** = # of track sector Data (zero-based)
-**L** = current Level
-**N** = curreNt track sector
-**O** = track row Offset (x)
-**P** = temP iterator for trees and game over graph&sound effects
-**Q** = Quick temp variable to gain some bytes
-**R** = current sector Row
-**S** = SID first register location
-**T** = Track current position (x)
-**V** = VIC II first register location
-**W** = track Width (recalculated at every row)
-**X**(array) = track sector turn delta X (0=go straight; <0 = turn left; >0 = turn right)
-**Y**(array) = track sector length Y
-
-**K\$** = pressed Key (in game) / chosen command (attract mode)
-**R\$** = game Result
+|**Name**|Description|
+|--|--|
+|**C**|Car position (x)|
+|**D**|# of track sector Data (zero-based)|
+|**L**|current Level|
+|**N**|curreNt track sector|
+|**O**|track row Offset (x)|
+|**P**|temP iterator for trees and game over graph&sound effects|
+|**Q**|Quick temp variable to gain some bytes|
+|**R**|current sector Row|
+|**S**|SID first register location|
+|**T**|Track current position (x)|
+|**V**|VIC II first register location|
+|**W**|track Width (recalculated at every row)|
+|**X** (array)|track sector turn delta X (0=go straight; <0 = turn left; >0 = turn right)|
+|**Y** (array)|track sector length Y|
+|**K\$**|pressed Key (in game) / chosen command (attract mode)|
+|**R\$**|game Result|
 
 **(c) 2021 by M.Montel (dr.prodigy)**: [find me on github](https://github.com/dr-prodigy/)
