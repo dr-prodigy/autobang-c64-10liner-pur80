@@ -47,6 +47,7 @@ Score increases while you proceed in your crazy run, depending on the current st
 
 ###  Technical notes
 Along with the game itself, the code features a **tiny attract screen** with game name ("bang" is shortened in "!", as of unix standard conventions) **explaining the commands**, while allowing to exit the program with RUN/STOP with no SID oscillator active / no killer sound going (phewww!).
+Before opening to the attract screen, the **keyboard buffer is cleaned** to avoid undesired new games due to previous game commands kept in the buffer.
 
 The **game main loop** works by **PRINTing the road** through **semi-graphic lines** at the **bottom of the screen**, thus triggering **system scroll routine** (you can also "take a rest" keeping Ctrl down if you wish! But you won't be able to turn meanwhile, so no big plus..), while **drawing trees** at random positions through **video RAM POKEs**.
 This allows to create **trees of 2 chars** while still scrolling 1 line at a time. 
@@ -54,8 +55,8 @@ Trees are randomically positioned, and their per-row number depends on the level
 They can appear out of the road too. This has not only aesthetic purposes, but also provides more difficulty balance. 
 
 The **car is rendered with VIC sprite #0**, initialized in code as a long vertical "stick" 6 pixels wide, partially hidden in its highest part to look more like a car than a bus :-)
-It can move in steps of 8 pixels every printed row, so it's capable of 45° turns.
-In case of a crash, sprite pointer is changed to an uninitialized memory area, sufficient to mimic a "destroyed" effect.
+It can move in steps of 8 pixels for each printed row, so it's capable of 45° turns.
+In case of a crash, car sprite pointer is changed to an uninitialized memory area, good enough to mimic a "destroyed" effect.
 
 **Track DATA** are structured in **sectors**, represented by **int pairs** (format: *`[turn direction X], [sector length Y)], ....`*). Due to the C64 BASIC default array size (10 elements), track sectors are limited to a number of 10.
 Track width is initially 20 chars, and then it's reduced by 1 char every new level. 
@@ -102,7 +103,7 @@ Code is signed with **my initials ("DRP")** at the end of lines 3-6:
 |**R\$**|game Result|
 
 #### Conclusions
-Thanks for this great contest.. enjoy Autobang!
+Thanks for this great contest.. enjoy Auto!(bang)
 *dr.prodigy*
 
 **(c) 2021 by Maurizio Montel (dr.prodigy)**: [find me on github](https://github.com/dr-prodigy/)
