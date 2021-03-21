@@ -75,6 +75,8 @@ Code is signed with **my initials ("DRP")** at the end of lines 3-6:
 * "R" (line 5) is a **syntax error block of code** which, due to the previous `...THEN7:`, is however never parsed thus unharmful
 * "P" (line 6) is the **81st (!!!) char**, so it **would theoretically infringe PUR80 rules** but, although meaningful and correct from the program point of view, **is unnecessary** (relevant NEXT statement works perfectly without it) and can be removed easily, also editing on a real C64: it's there only to complete my initials, and as a little joke :-)
 
+![drp](https://github.com/dr-prodigy/autobang-c64-10liner-pur80/blob/main/images/autobang_drp.png?raw=true)
+
 #### Variables
 **All variable names are 1 char long** to save space. **S** and **V** are used to access **SID** and **VIC II** registers with shorter code (like it used to be in the good ol' days). 
 
