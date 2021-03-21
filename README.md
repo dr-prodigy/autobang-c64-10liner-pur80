@@ -7,7 +7,9 @@
     
     READY.
 
-**WARNING! CODE CONTAINS A LINE OF 81 CHARS: PLEASE READ "CODE STATS AND JOKES" FOR DETAILS**
+![Autobang!](https://github.com/dr-prodigy/autobang-c64-10liner-pur80/blob/main/images/autobang.gif?raw=true)
+
+**\*\* WARNING! CODE CONTAINS A LINE OF 81 CHARS: PLEASE READ "CODE STATS AND JOKES" FOR DETAILS \*\***
     
 **Auto!(bang)** is an **old-school home computer game** for **Commodore 64 BASIC v2**. I developed this (very average) gameplay back in my C64 days ('80-something) as my first complete game project: after more than 30 (!!!) years, I come to re-implement it as my first PUR80 10-liner for the **"BASIC 10 Liner Contest 2021"** ( https://gkanold.wixsite.com/homeputerium/rules2021 ).
 
