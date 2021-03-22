@@ -1,5 +1,5 @@
 
-# autobang-c64-10liner-pur80
+# Autobang - C=64 10 Liner PUR-80 game
 
         ****  AUTOBANG!  BY  DR.P  2021  ****    
            
