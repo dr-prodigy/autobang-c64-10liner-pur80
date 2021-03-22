@@ -24,7 +24,7 @@ Its name (shortened in "Auto!", where "!" is read "bang" as in the unix traditio
 ### Story & gameplay
 You are **Bangy Boy**, a brave driver in a **car with no brakes**, running like crazy in a winding country road and trying to stay alive while **following road turns** and **avoiding pines** grown up in the middle of the road (?!?).
 
-Your goal is to **complete the whole track 10 times** (*stages*), but it won't be that easy: at every new stage (greeted by a start banner with the stage # on it) the road gets a bit narrower and you will find more and **more trees** on your way.
+Your goal is to **complete the whole track 10 times** (*stages*), but it won't be that easy: at every new stage (greeted by a start banner with the stage # on it) the road gets a bit narrower and you will find **more and more trees** on your way.
 
 The **game ends** when you **hit road borders / a tree**, or if you **complete the race**.
 
@@ -74,12 +74,12 @@ The game code is designed to **work flawlessly on any C64 version** (ie: from R1
 
 Auto!(bang) has been developed using [C64 Studio](https://www.c64-wiki.com/wiki/C64_Studio): big kudos to Georg Rottensteiner for his great work!
 
-#### Code stats & Jokes
+#### Code stats & jokes
 The program is made of **10 lines (0-9)**, for an exact **total of 800 chars** if counting the 81st char (see below!) in line 6, or otherwise 799 for the "legit" version of the code (ie: with that char removed).
 
 Code is signed with **my initials ("DRP")** at the end of lines 3-6:
 * "D" (line 3) is part of the program code
-* "R" (line 5) is in a **syntax error block of code** which, due to the previous `...THEN7:`, is however never parsed, thus unharmful
+* "R" (line 5) is in a **syntax error block of code** which, due to the previous `...THEN7:`, is however never parsed, and thus unharmful
 * "P" (line 6) is the **81st (!!!) char**, so it **would theoretically infringe PUR-80 rules** but, although meaningful and correct from the program point of view, **is unnecessary** (relevant NEXT statement works perfectly without it) and can be removed easily, also editing on a real C64: it's there to complete my initials, and as a little joke, in fact :-)
 
 ![drp](https://github.com/dr-prodigy/autobang-c64-10liner-pur80/blob/main/images/autobang_drp.png?raw=true)
