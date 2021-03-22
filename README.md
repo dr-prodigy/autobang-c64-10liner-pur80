@@ -35,7 +35,7 @@ Score increases while you proceed in your crazy run, depending on the current st
 ### Instructions to play the game
 * Open WinVice (C64)
 * Select *"File"* -> *"Autostart disk image..."*
-* Attach *"autobang.prg"* file
+* Attach *"autobang.d64"* file
 
 ### In-game controls
 **Z** = Move left
