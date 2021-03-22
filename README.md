@@ -71,6 +71,8 @@ Sounds duration and sprite initializations (run every time on purpose) give enou
 
 The game code is designed to **work flawlessly on any C=64 version** (ie: from R1 KERNAL on), real or emulated, in that it includes explicit color POKEs for all drawn characters (thus circumventing older versions' video color RAM bug).
 
+Auto!(bang) has been developed using [C64 Studio](https://www.c64-wiki.com/wiki/C64_Studio): big kudos to Georg Rottensteiner for his great work!
+
 #### Code stats & Jokes
 The program is made of **10 lines (0-9)**, for an exact **total of 800 chars** if counting the 81st char (see below!) in line 6, or otherwise 799 for the "legit" version of the code (ie: with that char removed).
 
