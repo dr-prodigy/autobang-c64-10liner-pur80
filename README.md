@@ -50,7 +50,7 @@ Score increases while you proceed in your crazy run, depending on the current st
 ###  Technical notes
 Along with the game itself, the code features a **tiny attract screen** with game name ("bang" is shortened in "!", as of unix standard conventions) **explaining the commands**, while allowing to exit the program with RUN/STOP with no SID oscillator active / no killer sound going (phewww!).
 
-Before getting back to the attract screen, the **keyboard buffer is cleaned** to avoid an undesired new game start due to previous game still in the buffer.
+Before getting back to the attract screen, the **keyboard buffer is cleaned** to avoid an undesired new game start due to previous game commands still in the buffer.
 
 The **game main loop** works by **PRINTing the road** through **semi-graphic lines** at the **bottom of the screen**, thus triggering **system scroll routine** (you can also "take a rest" keeping Ctrl down if you wish! But you won't be able to turn meanwhile, so no big cheating..), while **drawing trees** at random positions through **video RAM POKEs**.
 This allows to create **trees of 2 chars** while still scrolling 1 line at a time. 
@@ -107,6 +107,9 @@ Code is signed with **my initials ("DRP")** at the end of lines 3-6:
 |**Y** (array)|track sector length Y|
 |**K\$**|pressed Key (in game) / chosen command (attract mode)|
 |**R\$**|game Result|
+
+#### Code in a more readable format (PETSCII)
+![code](https://github.com/dr-prodigy/autobang-c64-10liner-pur80/blob/main/images/autobang_code.png?raw=true)
 
 #### Conclusions
 Thanks for this nice contest.. enjoy Auto!(bang), your C64, and life!
